@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A192F;
+    color: #F0F4F8;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #112240, #0A192F);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#title {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #64FFDA;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(135deg, #0A192F, #112240);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #64FFDA;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation-item {
+    text-decoration: none;
+    color: #64FFDA;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.navigation-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #64FFDA;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation-item:hover::after {
+    width: 100%;
+}
+
+.navigation-item:hover {
+    color: #F0F4F8;
+}
+
+/* Banner */
+.banner img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Sections */
+.section-container {
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #112240, #0A192F);
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #64FFDA;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+/* Floating Images for Bot Discord and Community Sections */
+.bot-background, .communaute-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.floating-image {
+    position: absolute;
+    width: 100px;
+    opacity: 0.15;
+    animation: floatAnimation 6s infinite ease-in-out;
+    border-radius: 25px;
+}
+
+.floating-image:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-duration: 5s;
+}
+
+.floating-image:nth-child(2) {
+    top: 50%;
+    left: 70%;
+    animation-duration: 7s;
+}
+
+.floating-image:nth-child(3) {
+    top: 80%;
+    left: 40%;
+    animation-duration: 6s;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0A192F;
+    background-color: #64FFDA;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 255, 200, 0.3);
+}
+
+.button:hover {
+    background-color: #52e0c4;
+    box-shadow: 0 6px 15px rgba(0, 255, 200, 0.5);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #0A192F, #112240);
+    border-top: 2px solid #64FFDA;
+    font-size: 1rem;
+}
