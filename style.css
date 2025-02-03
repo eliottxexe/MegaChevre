@@ -121,6 +121,10 @@ p {
     opacity: 0.9;
 }
 
+a {
+    color: white;
+}
+
 /* Floating Images for Bot Discord and Community Sections */
 .bot-background, .communaute-background {
     position: relative;
