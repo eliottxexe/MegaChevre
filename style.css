@@ -7,8 +7,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0A192F;
-    color: #F0F4F8;
+    background-color: #0A111D; /* Couleur de fond plus foncée */
+    color: #E1E8F0; /* Texte plus clair pour un meilleur contraste */
     overflow-x: hidden;
 }
 
@@ -16,14 +16,14 @@ body {
 header {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #112240, #0A192F);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #1C2A45, #0A111D); /* Gradient plus sombre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
 }
 
 #title {
     font-size: 3rem;
     margin: 10px 0;
-    color: #64FFDA;
+    color: #64FFDA; /* Couleur lumineuse du texte */
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -31,16 +31,16 @@ header {
 #subtitle {
     font-size: 1.5rem;
     font-weight: 300;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 /* Navigation */
 nav {
-    background: linear-gradient(135deg, #0A192F, #112240);
+    background: linear-gradient(135deg, #0A111D, #1C2A45); /* Couleurs foncées pour la navigation */
     padding: 15px 0;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #64FFDA;
+    border-bottom: 2px solid #64FFDA; /* Ligne de séparation en bleu clair */
     position: sticky;
     top: 0;
     width: 100%;
@@ -88,7 +88,7 @@ nav {
 
 .navigation-item li a {
     text-decoration: none;
-    color: #64FFDA;
+    color: #64FFDA; /* Couleur bleu clair pour les liens */
     font-weight: bold;
     font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
@@ -113,7 +113,7 @@ nav {
 }
 
 .navigation-item li a:hover {
-    color: #F0F4F8;
+    color: #E1E8F0; /* Changer la couleur du texte au survol */
 }
 
 /* Banner */
@@ -123,18 +123,18 @@ nav {
     display: block;
     margin: 30px auto;
     border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Ombre plus sombre */
 }
 
 /* Sections */
 .section-container {
     padding: 60px;
     text-align: center;
-    background: linear-gradient(135deg, #112240, #0A192F);
+    background: linear-gradient(135deg, #1C2A45, #0A111D); /* Gradient plus sombre */
     margin: 40px auto;
     width: 80%;
     border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -143,7 +143,7 @@ nav {
 }
 
 h2 {
-    color: #64FFDA;
+    color: #64FFDA; /* Titre clair pour contraster avec le fond sombre */
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -151,7 +151,7 @@ h2 {
 p {
     font-size: 1.2rem;
     line-height: 1.8;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 a {
@@ -218,7 +218,7 @@ a {
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #0A192F;
+    color: #0A111D; /* Couleur sombre pour le texte */
     background-color: #64FFDA;
     border: none;
     border-radius: 10px;
@@ -237,7 +237,7 @@ a {
 footer {
     text-align: center;
     padding: 30px;
-    background: linear-gradient(135deg, #0A192F, #112240);
+    background: linear-gradient(135deg, #0A111D, #1C2A45); /* Gradient sombre pour le footer */
     border-top: 2px solid #64FFDA;
     font-size: 1rem;
 }
