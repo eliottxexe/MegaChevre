@@ -1,5 +1,4 @@
 /* General Styles */
-
 html {
     scroll-behavior: smooth;
 }
@@ -50,10 +49,44 @@ nav {
 
 .nav-container {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.nav-logo a img {
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-logo a img:hover {
+    transform: scale(1.2);
+}
+
+.nav-logo a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #64FFDA;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -8px;
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+.nav-logo a:hover::after {
+    width: 100px;
 }
 
 .navigation-item {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-item li a {
     text-decoration: none;
     color: #64FFDA;
     font-weight: bold;
@@ -62,7 +95,7 @@ nav {
     position: relative;
 }
 
-.navigation-item::after {
+.navigation-item li a::after {
     content: '';
     display: block;
     width: 0;
@@ -70,16 +103,16 @@ nav {
     background: #64FFDA;
     transition: width 0.3s;
     position: absolute;
-    bottom: -5px;
+    bottom: -24px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.navigation-item:hover::after {
+.navigation-item li a:hover::after {
     width: 100%;
 }
 
-.navigation-item:hover {
+.navigation-item li a:hover {
     color: #F0F4F8;
 }
 
@@ -123,6 +156,7 @@ p {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 /* Floating Images for Bot Discord and Community Sections */
@@ -164,6 +198,12 @@ a {
     top: 80%;
     left: 40%;
     animation-duration: 6s;
+}
+
+.floating-image:nth-child(4) {
+    top: 30%;
+    left: 50%;
+    animation-duration: 8s;
 }
 
 @keyframes floatAnimation {
