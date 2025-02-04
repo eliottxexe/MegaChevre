@@ -52,6 +52,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    border-radius: 25px;
 }
 
 .nav-logo a img {
@@ -61,23 +62,6 @@ nav {
 
 .nav-logo a img:hover {
     transform: scale(1.2);
-}
-
-.nav-logo a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background: #64FFDA;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -8px;
-    left: 10%;
-    transform: translateX(-50%);
-}
-
-.nav-logo a:hover::after {
-    width: 100px;
 }
 
 .navigation-item {
